@@ -1,0 +1,22 @@
+##################
+#  bash aliases  #
+##################
+
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias dir='dir --color=auto'
+    alias grep='grep --color=auto'
+fi
+
+alias ll='ls -tralF --group-directories-first --color=auto'
+alias ls='ls -tr --group-directories-first --color=auto'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias clearflags='unset CFLAGS CPPFLAGS LDFLAGS'
+alias getflags='unset CPPFLAGS; eval $(sed -rn "s/^((C|LD|MAKE)FLAGS)/export \1/p" /etc/makepkg.conf)'
+alias md5='md5sum'
+alias nano='nano -$'
+alias v='vim'
+alias tf='terraform'
+alias myip="curl -s 'https://api.myip.com'"
