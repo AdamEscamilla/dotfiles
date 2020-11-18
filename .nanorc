@@ -1,0 +1,19 @@
+##########
+#  nano  #
+##########
+
+set linenumbers
+set smooth
+set tabsize 4
+set tabstospaces
+
+# style
+
+set titlecolor brightwhite,blue
+set statuscolor brightwhite,green
+set selectedcolor brightwhite,magenta
+set numbercolor cyan
+set keycolor cyan
+set functioncolor green
+#set errorcolor brightwhite,red # doesn't work on 2.x
+
