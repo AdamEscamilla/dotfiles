@@ -1,2 +1,3 @@
 # dotfiles
 
+init run commands
